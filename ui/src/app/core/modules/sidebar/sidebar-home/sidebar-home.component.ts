@@ -11,7 +11,7 @@ export class SidebarHomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  
+
   closeSideBar() {
     let classList = (document.querySelector('.sidenav') as HTMLElement).classList;
     if (!classList.contains('transitionOn')){
