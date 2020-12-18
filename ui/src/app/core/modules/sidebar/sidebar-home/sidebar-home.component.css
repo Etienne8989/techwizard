@@ -1,0 +1,36 @@
+.nav-flex{
+  height: 80%;
+  display: flex;
+  align-items: center;
+  /*color: white;*/
+}
+
+.sidenav-btn{
+  display: inline-block;
+  border: 1px solid black;
+  /*background-color: #6A128D;*/
+}
+
+.sidenav{
+  height: 90%;
+  /*background-color: #030418;*/
+  display: inline-block;
+}
+
+.sidenav.transitionOn{
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+  -ms-transition: .1s;
+  -o-transition: .1s;
+  transition: .1s;
+  width: 20% !important;
+}
+
+.sidenav.transitionOf{
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+  -ms-transition: .1s;
+  -o-transition: .1s;
+  transition: .1s;
+  width: 0 !important;
+}

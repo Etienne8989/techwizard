@@ -10,7 +10,7 @@ import {SidebarModule} from "./core/modules/sidebar/sidebar.module";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
