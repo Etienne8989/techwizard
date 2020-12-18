@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {DashbordMainModule} from "./pages/dashbord-main/dashbord-main.module";
+import {HeaderModule} from "./core/modules/header/header.module";
+import {SidebarModule} from "./core/modules/sidebar/sidebar.module";
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import {DashbordMainModule} from "./pages/dashbord-main/dashbord-main.module";
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    DashbordMainModule
+    DashbordMainModule,
+    HeaderModule,
+    SidebarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

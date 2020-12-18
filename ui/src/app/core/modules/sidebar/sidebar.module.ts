@@ -8,6 +8,9 @@ import { SidebarHomeComponent } from './sidebar-home/sidebar-home.component';
   declarations: [SidebarHomeComponent],
   imports: [
     CommonModule
+  ],
+  exports: [
+    SidebarHomeComponent
   ]
 })
 export class SidebarModule { }
