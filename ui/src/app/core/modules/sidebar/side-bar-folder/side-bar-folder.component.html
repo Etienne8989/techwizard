@@ -1,1 +1,7 @@
-<p>side-bar-folder works!</p>
+<button class="folder-btn" (click)="showArticles()"><ng-content></ng-content></button>
+<ng-container *ngIf="isShowArticle">
+    <ng-container *ngFor="let article of artickleMock">
+        <app-side-bar-article-display>{{article.title}}</app-side-bar-article-display>
+    </ng-container>
+    <app-side-bar-article-display>sss</app-side-bar-article-display>
+</ng-container>

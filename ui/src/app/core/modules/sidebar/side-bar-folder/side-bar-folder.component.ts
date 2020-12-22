@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideBarFolderComponent implements OnInit {
 
+isShowArticle = false;
+  artickleMock = [ // change to input
+    {title: 'title1', text: 'text1'},
+    {title: 'title2', text: 'text2'},
+    {title: 'title3', text: 'text3'},
+    {title: 'title4', text: 'text4'}
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  showArticles(){
+    this.isShowArticle = !this.isShowArticle;
   }
 
 }

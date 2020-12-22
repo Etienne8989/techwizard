@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   /*color: white;*/
+
 }
 
 .sidenav-btn{
@@ -17,6 +18,7 @@
 .sidenav{
   height: 90%;
   display: inline-block;
+  overflow: hidden;
 }
 
 .sidenav.transitionOn{
