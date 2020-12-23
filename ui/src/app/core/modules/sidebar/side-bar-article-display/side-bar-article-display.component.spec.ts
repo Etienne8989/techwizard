@@ -8,17 +8,17 @@ describe('SideBarArticleDisplayComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SideBarArticleDisplayComponent ]
+      declarations: [SideBarArticleDisplayComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(SideBarArticleDisplayComponent);
-    component = fixture.componentInstance;
+    fixture.componentInstance;
     fixture.detectChanges();
   });
-
+  
   it('should create', () => {
     expect(component).toBeTruthy();
   });

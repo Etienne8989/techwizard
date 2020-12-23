@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-side-bar-folder',
@@ -7,20 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideBarFolderComponent implements OnInit {
 
-isShowArticle = false;
-  artickleMock = [ // change to input
-    {title: 'title1', text: 'text1'},
-    {title: 'title2', text: 'text2'},
-    {title: 'title3', text: 'text3'},
-    {title: 'title4', text: 'text4'}
-  ];
+  @Input() folderName: string;
+  isShowArticle = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  showArticles(){
+  showArticles() {
     this.isShowArticle = !this.isShowArticle;
   }
 

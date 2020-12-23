@@ -1,7 +1,6 @@
-<button class="folder-btn" (click)="showArticles()"><ng-content></ng-content></button>
+<button folderName="folderName" class="folder-btn" (click)="showArticles()">{{folderName}}</button>
 <ng-container *ngIf="isShowArticle">
-    <ng-container *ngFor="let article of artickleMock">
-        <app-side-bar-article-display>{{article.title}}</app-side-bar-article-display>
-    </ng-container>
-    <app-side-bar-article-display>sss</app-side-bar-article-display>
+    <ng-content></ng-content>
 </ng-container>
+
+
