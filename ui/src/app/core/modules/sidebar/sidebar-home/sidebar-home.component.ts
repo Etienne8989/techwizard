@@ -14,6 +14,8 @@ export class SidebarHomeComponent implements OnInit {
     { title: 'title4', text: 'text4', relatedStack: 'stack4' }
   ];
 
+  opened: boolean= false;
+
   constructor() {
   }
 

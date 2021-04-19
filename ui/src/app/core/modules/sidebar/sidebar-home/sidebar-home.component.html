@@ -1,21 +1,26 @@
-<p>sidebar-home works!</p>
-<div class="nav-flex">
-  <div class="nav dark sidenav transitionOn">
-    <app-side-bar-folder [folderName]="'folder root'">
-        <ng-container *ngFor="let article of artickleMock">
-            <app-side-bar-article-display>{{article.title}}</app-side-bar-article-display>
-        </ng-container>
-        <app-side-bar-folder [folderName]="'folder inside'">
-          <ng-container *ngFor="let article of artickleMock">
-              <app-side-bar-article-display>{{article.title}}</app-side-bar-article-display>
-          </ng-container>
-      </app-side-bar-folder>
-    </app-side-bar-folder>
-  </div>
-  <div>
-    <button class="sidenav-btn" (click)="closeSideBar()"></button>
-  </div>
-</div>
-
+<!--<div class="nav-flex">-->
+<!--  <div class="nav dark sidenav transitionOn">-->
+<!--    <app-side-bar-folder [folderName]="'folder root'">-->
+<!--        <ng-container *ngFor="let article of artickleMock">-->
+<!--            <app-side-bar-article-display>{{article.title}}</app-side-bar-article-display>-->
+<!--        </ng-container>-->
+<!--        <app-side-bar-folder [folderName]="'folder inside'">-->
+<!--          <ng-container *ngFor="let article of artickleMock">-->
+<!--              <app-side-bar-article-display>{{article.title}}</app-side-bar-article-display>-->
+<!--          </ng-container>-->
+<!--      </app-side-bar-folder>-->
+<!--    </app-side-bar-folder>-->
+<!--    <button mat-button>hello world</button>-->
+<!--  </div>-->
+<!--  <div>-->
+<!--    <button class="sidenav-btn" (click)="closeSideBar()"></button>-->
+<!--  </div>-->
+<!--</div>-->
+<mat-sidenav-container>
+  <mat-sidenav mode="side" [(opened)]="opened">Sidenav</mat-sidenav>
+  <mat-sidenav-content>
+      <button (click)="opened=!opened">Open Navigation</button>
+  </mat-sidenav-content>
+</mat-sidenav-container>
 
 
