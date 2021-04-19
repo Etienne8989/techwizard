@@ -6,6 +6,14 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./sidebar-home.component.css']
 })
 export class SidebarHomeComponent implements OnInit {
+
+  artickleMock = [ // change to input
+    { title: 'title1', text: 'text1', relatedStack: 'stack1' },
+    { title: 'title2', text: 'text2', relatedStack: 'stack2' },
+    { title: 'title3', text: 'text3', relatedStack: 'stack3' },
+    { title: 'title4', text: 'text4', relatedStack: 'stack4' }
+  ];
+
   constructor() {
   }
 

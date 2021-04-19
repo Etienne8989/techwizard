@@ -1,8 +1,16 @@
 <p>sidebar-home works!</p>
 <div class="nav-flex">
   <div class="nav dark sidenav transitionOn">
-    <p>one</p>
-    <p>two</p>
+    <app-side-bar-folder [folderName]="'folder root'">
+        <ng-container *ngFor="let article of artickleMock">
+            <app-side-bar-article-display>{{article.title}}</app-side-bar-article-display>
+        </ng-container>
+        <app-side-bar-folder [folderName]="'folder inside'">
+          <ng-container *ngFor="let article of artickleMock">
+              <app-side-bar-article-display>{{article.title}}</app-side-bar-article-display>
+          </ng-container>
+      </app-side-bar-folder>
+    </app-side-bar-folder>
   </div>
   <div>
     <button class="sidenav-btn" (click)="closeSideBar()"></button>

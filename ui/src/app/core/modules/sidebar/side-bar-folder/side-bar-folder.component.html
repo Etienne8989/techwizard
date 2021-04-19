@@ -1,0 +1,6 @@
+<button folderName="folderName" class="folder-btn" (click)="showArticles()">{{folderName}}</button>
+<ng-container *ngIf="isShowArticle">
+    <ng-content></ng-content>
+</ng-container>
+
+
