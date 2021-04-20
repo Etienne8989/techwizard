@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {DashbordMainModule} from "./pages/dashbord-main/dashbord-main.module";
 import {HeaderModule} from "./core/modules/header/header.module";
 import {SidebarModule} from "./core/modules/sidebar/sidebar.module";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {SidebarModule} from "./core/modules/sidebar/sidebar.module";
     BrowserAnimationsModule,
     DashbordMainModule,
     HeaderModule,
-    SidebarModule
+    SidebarModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
