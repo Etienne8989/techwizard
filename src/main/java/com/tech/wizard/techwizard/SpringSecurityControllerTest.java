@@ -1,6 +1,7 @@
 package com.tech.wizard.techwizard;
 
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
@@ -12,8 +13,8 @@ import java.util.UUID;
 @RestController
 public class SpringSecurityControllerTest {
 
-
-    @RequestMapping("/resource")
+    @GetMapping("/resource")
+    @CrossOrigin
     public Map<String,Object> home() {
         Map<String,Object> model = new HashMap<String,Object>();
         model.put("id", UUID.randomUUID().toString());
